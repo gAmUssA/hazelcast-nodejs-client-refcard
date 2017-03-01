@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hazelcast-client": "^0.6.0"
+  }
+}
