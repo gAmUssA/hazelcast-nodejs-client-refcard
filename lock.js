@@ -9,6 +9,7 @@ HazelcastClient.newHazelcastClient().then((client) => {
 
     lock.lock().then(() => {
         // do something
+
     });
 
     lock.unlock();

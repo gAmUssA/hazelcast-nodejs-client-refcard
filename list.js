@@ -19,6 +19,6 @@ HazelcastClient.newHazelcastClient().then((client) => {
     list.addAll(elements).then(() => {
         list.containsAll(elements).then((result) => {
             console.log(`contains all element1 - ${result}`);
-        })
+        });
     });
 });

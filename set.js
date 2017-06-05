@@ -13,6 +13,6 @@ HazelcastClient.newHazelcastClient().then((client) => {
         set.getAll().then((result) => {
             //look, ma, no duplicates
             console.log(result);
-        })
+        });
     });
 });
