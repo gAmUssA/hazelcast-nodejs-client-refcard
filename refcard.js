@@ -59,7 +59,7 @@ let listenerExample = (map) => {
     "use strict";
     let listener = {
         added: (key, oldValue, value, mergingValue) => {
-            console.log(value)
+            console.log(value);
         }
     };
     map.addEntryListener(listener, undefined, true).then(() => {

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hazelcast
+        xsi:schemaLocation="http://www.hazelcast.com/schema/config http://www.hazelcast.com/schema/config/hazelcast-config-3.8.xsd"
+        xmlns="http://www.hazelcast.com/schema/config"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <properties>
+        <property name="hazelcast.socket.bind.any">false</property>
+    </properties>
+    <network>
+        <interfaces>
+            <interface>172.17.0.*</interface>
+        </interfaces>
+        <join>
+            <multicast enabled="false"/>
+            <tcp-ip enabled="true">
+                <member>172.17.0.1</member>
+                <member>172.17.0.2</member>
+            </tcp-ip>
+        </join>
+    </network>
+
+</hazelcast>

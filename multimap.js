@@ -4,7 +4,7 @@ const Config = require('hazelcast-client').Config;
 let config = new Config.ClientConfig();
 config.networkConfig.addresses = [{host: '127.0.0.1', port: '5701'}];
 
-HazelcastClient.newHazelcastClient().then((client) => {
+HazelcastClient.newHazelcastClient(config).then((client) => {
     "use strict";
     let mmap = client.getMultiMap('restaurants');
 
